@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.bo-wrapper {
+    background-color: white;
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    font-size: 23px;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+}
+
+.bo-category {
+    width: 280px;
+    height: 150px;
+    box-shadow: 1px 10px 20px #a1a1a1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.bo-category-little {
+    width: 280px;
+    height: 100px;
+    box-shadow: 1px 10px 20px #a1a1a1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6666;
+}
+
+.bo-line {
+    margin-top: 30px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bo-line-bottom {
+    margin-top: 30px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+
+    .bo-wrapper {
+        width: 100%;
+    }
+
+    .bo-line {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .bo-line-bottom {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .bo-category {
+        margin-bottom: 20px;
+    }
+
+    .bo-category-little {
+        margin-bottom: 20px;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+
+    .bo-wrapper {
+        margin-top: 60px;
+        background-color: #eee;
+    }
+    
+  }
+
+  

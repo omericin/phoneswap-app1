@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.sell-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #383b3b;
+    align-items: center;
+    margin-top: 0px;
+    background-color: #9598a6;
+    margin-bottom: 0px;
+}
+
+.top-section-wrapper {
+    width: 1000px;
+    background-color: #9598a6;
+}
+
+.top-section {
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.sell-content {
+    width: 40%;
+    margin: 50px 0px 50px 70px;
+    font-weight: 400;
+}
+
+.sell-online {
+    width: 60%;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.store-container {
+    display: flex;
+    width: 960px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    justify-content: space-around;
+    background-color: white;
+    line-height: 30px;
+    height: 300px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 20px 80px 20px;
+}
+
+.store-container ul {
+    list-style-type: none;
+}
+
+.store-img {
+    height: 300px;
+}
+
+@media (max-width: 1000px) {
+
+    .top-section-wrapper {
+        width: 100%;
+    }
+
+    .top-section {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sell-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .store-container {
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 80%;
+        height: auto;
+    }
+    
+  }
