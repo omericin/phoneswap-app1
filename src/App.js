@@ -36,8 +36,8 @@ function App() {
 
   return (
     <div>
-      <div className='app-container'>
         <Header />
+      <div className='app-container'>
         <Nav screenWidth={screenWidth} />
         <div className='amount-header'>Hvor mange enheder ønsker du at sælge?</div>
         <div className='amount-wrapper'>

@@ -1,8 +1,5 @@
 import React from "react";
 import './Assets/Css/SellToUs.css';
-import form from "./Assets/Img/form2.png";
-import pack from "./Assets/Img/pack.png";
-import payment from "./Assets/Img/payment.png";
 import saelg from "./Assets/Img/seay.png";
 import Card from '../Components/SellOnlineCard';
 import office from "./Assets/Img/office.jpeg";

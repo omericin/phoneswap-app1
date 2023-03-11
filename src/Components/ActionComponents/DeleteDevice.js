@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ImageUploading from 'react-images-uploading';
 import axios from "axios";
-import { apiColor } from "../../utils/path";
+import { apiAddDevice } from "../../utils/path";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Assets/Css/Form.css';
@@ -10,7 +10,7 @@ import '../Assets/Css/Actions.css';
 import { FaCheck } from "react-icons/fa";
 import Navigation from "../Navigation"
 
-export default function DeleteColor(props) {
+export default function DeleteDevice(props) {
 
     let navigate = useNavigate();
     const routeChange = () => {
@@ -23,7 +23,7 @@ export default function DeleteColor(props) {
 
     useEffect (() => {
 
-        axios.get(apiColor).then((response) => {
+        axios.get(apiAddDevice).then((response) => {
             setList(response.data);
             console.log("list: ", response.data);
         });
@@ -32,16 +32,16 @@ export default function DeleteColor(props) {
 
     useEffect (() => {
 
-        axios.get(`${apiColor}`).then((response) => {
+        axios.get(apiAddDevice).then((response) => {
             setList(response.data);
             console.log("list: ", response.data);
         });
 
     }, [id]);
 
-    function doSmth(colorId) {
-        console.log("DELEETING: ", colorId);
-        axios.delete(`${apiColor}${colorId}`).then((response) => {
+    function doSmth(deviceId) {
+        console.log("DELEETING: ", deviceId);
+        axios.delete(`${apiAddDevice}${deviceId}`).then((response) => {
             setId(response);
             toast.success('Color Saved Successfully', {
                 position: "top-center",
@@ -62,7 +62,7 @@ export default function DeleteColor(props) {
                         <div className="list-item-wrapper">
                             {
                             list?.map((key) => <div className="list-item-line">
-                                <div style={{ backgroundColor: `#${key.hexCode}` }} className="list-item-color-avatar"></div><div className="list-item-id">{key.name}</div><button onClick={()=> doSmth(key.id)}>Delete</button>
+                                <div className="list-item-id">{key.name}</div><button onClick={()=> doSmth(key.id)}>Delete</button>
                             </div>
                             )
                         }

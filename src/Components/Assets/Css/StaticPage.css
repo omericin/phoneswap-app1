@@ -87,7 +87,112 @@
     justify-content: space-between;
 }
 
+.mail-approve-container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    background-color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.mail-approve-container button {
+    width: 12rem;
+    height: 3rem;
+    background-color: #35af15;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin-top: 2rem;
+    font-family: 'Roboto';
+}
+
+.mail-approve-header {
+    background-color: #35af15;
+    width: 80%;
+    height: 5rem;
+    border-radius: 15px 15px 0px 0px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #35af15;
+}
+
+.mail-approve-content {
+    background-color: #fff;
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 10rem;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #1e1e1e;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.lisence-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lisence-header {
+    width: 80%;
+    height: 75px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Roboto', Arial;
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #1c77e0;
+    background-color: #1c77e0;
+    border-radius: 15px 15px 0 0;
+}
+
+.lisence-content {
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #fafafa;
+    border: 1px solid #d3d3d3;
+    padding: 2% 5% 2% 5%;
+    border-radius: 0 0 15px 15px;
+}
+
+.lisence-modal {
+    font-family: 'Roboto';
+    text-align: center;
+}
+
 @media (max-width: 768px) {
+
+    .lisence-header {
+        margin-top: 100px;
+    }
 
     .butik-wrapper {
         width: 100%;

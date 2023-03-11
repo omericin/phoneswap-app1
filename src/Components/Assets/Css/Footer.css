@@ -19,14 +19,23 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 80%;
+    width: 65%;
     align-items: flex-start;
+}
+
+.footer-con-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .links {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 2;
+    align-items: center;
 }
 
 .links a{
@@ -34,6 +43,48 @@
     color: white;
 }
 
-.footer-contact p {
-    font-weight: 500;
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.footer-butik {
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    background-color: #383b3b;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.facebook-logo:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .links {
+        margin-top: 20px;
+        border-bottom: 1px solid #1c77e0;
+        border-top: 1px solid #1c77e0;
+    }
+
+    .footer-con-wrap {
+        justify-content: flex-start;
+    }
 }

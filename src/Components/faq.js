@@ -9,12 +9,6 @@ import './Assets/Css/faq.css';
 
 function Faq() {
 
-        useEffect(() => {
-            axios.get('http://localhost:8181/v1/').then((response) => {
-                console.log(response.data);
-            });
-    }, []);
-
     let navigate = useNavigate();
     const routeChange = () => {
         let path = '/saelg';
@@ -41,8 +35,11 @@ function Faq() {
     const [q4, setQ4] = useState(false);
     const [q5, setQ5] = useState(false);
     const [q6, setQ6] = useState(false);
+    const [q7, setQ7] = useState(false);
+    const [q8, setQ8] = useState(false);
+    const [q9, setQ9] = useState(false);
 
-    return (
+    return (<>
         <div>
             <div className='app-container'>
                 <Header />
@@ -52,6 +49,49 @@ function Faq() {
                     <div className='header'>
                         FAQ
                     </div>
+
+
+                    <div onClick={() => setQ7(!q7)} className='line-faq'>
+                    Hvad sker der med de opkøbte enheder?
+                    </div>
+                    {
+                        q7 ? (
+                            <div  onClick={() => setQ1(!q7)}className='answer'>
+                                Når vi modtager din enhed, bliver den testet for fejl og mangler. Herefter bliver den slettet så dine data ikke kommer i de forkerte hænder. Vi bruger specielt værktøj/software der gør at man ikke kan genskabe dine data uanset hvad man gør. Dine enheder bliver slettet op til flere gange, så de ikke kan findes frem igen.Når dine data er blevet slettet, bliver din enhed sat i stand og bliver solgt videre til en anden glad bruger.
+                            </div>
+                        ) : null
+                    }
+                    { q7 ? null : (<div className='quote'></div>) }
+
+
+
+                    <div onClick={() => setQ8(!q8)} className='line-faq'>
+                    Kan man fortryde handlen inden man modtager pengene og få sine enheder tilbage?
+                    </div>
+                    {
+                        q8 ? (
+                            <div  onClick={() => setQ1(!q8)}className='answer'>
+                                Ja. Du kan altid fortryde handlen inden vi udbetaler pengene til dig. Det kræver dog at vi ikke har skilt telefonen ad. Hvis vi har skilt det fra hinanden, kan man ikke længere fortryde da vi bruger flere timer på at finde fejl og teste enhederne før vi giver dig en endelig pris.
+                            </div>
+                        ) : null
+                    }
+                    { q8 ? null : (<div className='quote'></div>) }
+
+
+                    <div onClick={() => setQ9(!q9)} className='line-faq'>
+                    Kan man selv indlevere enhederne eller skal de sendes?
+                    </div>
+                    {
+                        q9 ? (
+                            <div  onClick={() => setQ1(!q9)}className='answer'>
+                                Du kan både sende eller selv komme ind med dine enheder til os.
+                            </div>
+                        ) : null
+                    }
+                    { q9 ? null : (<div className='quote'></div>) }
+
+
+
                     <div onClick={() => setQ1(!q1)} className='line-faq'>
                         Hvor hurtig får man pengene udbetalt?
                     </div>
@@ -85,12 +125,12 @@ function Faq() {
                     }
                     { q3 ? null : (<div className='quote'></div>) }
                     <div onClick={() => setQ4(!q4)} className='line-faq'>
-                        Ingen problem. Vi matcher altid prisen du har fået oplyst et andet sted.
+                    Jeg har set at prisen er bedre et andet sted, hvorfor skulle jeg sælge til jer?
                     </div>
                     {
                         q4 ? (
                     <div onClick={() => setQ4(!q4)} className='answer'>
-                        Ja det kan man. Men det vil betyde en BETYDELIG reducering af prisen. Man kan stadig godt få penge for låste enheder, men prisen er væsentlig reduceret.
+                        Ingen problem. Vi matcher altid prisen du har fået oplyst et andet sted.
                     </div>
                     ) : null
                     }
@@ -122,6 +162,8 @@ function Faq() {
                 }}></div>
         </div>
         </div >
+        <Footer></Footer>
+        </>
     );
 }
 

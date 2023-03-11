@@ -89,15 +89,14 @@
 .address-modal {
     width: 700px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #f2f3f4;
+    align-items: center;
 }
 
 .modal-address-content {
     width: 80%;
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -105,4 +104,108 @@
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 1px 5px 10px #a1a1a1;
+}
+
+.error-modal {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f3f4;
+    align-items: center;
+}
+
+.modal-error-content {
+    font-family: 'Roboto';
+    font-size: 18px;
+    width: 80%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 1px 5px 10px #a1a1a1;
+    color: red;
+    font-weight: 600;
+}
+
+#lisence-button {
+    background-color: red;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    background-color: white;
+    color: blue;
+}
+
+.modal-lisence-content {
+    font-family: 'Roboto';
+    font-size: 14px;
+    width: 90%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 1px 5px 10px #a1a1a1;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal-lisence-wrapper-close {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+}
+
+.modal-lisence-content h3{
+    font-family: 'Times New Roman';
+}
+
+@media (max-width: 768px) {
+    .modal-wrapper-pc-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .modal-button-wrapper2 {
+        flex-direction: column;
+    }
+
+    .modal-wrapper {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .lisence-modal {
+        width: 100%;
+    } 
+
+    .error-modal {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .address-modal {
+        width: 100%;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .modal-address-content {
+        margin-top: 20px;
+        width: 100%;
+    }
 }

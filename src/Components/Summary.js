@@ -17,7 +17,7 @@ function Summary() {
                 <h3>Tænk på miljøet og på din pengepung</h3>
                 Elektronikspild i Danmark er et stort problem og vi bør derfor begrænse vores forbrug af ressourcekrævende apperater. I hvert fald bør vi reducere udskiftningen som medfører et stort ressourcetab når elektronik kasseres. Dette kan nedbringes ved at du fx vælger at sælge din iPhone til Phonetrade. Vi genanvender ALLE dele i din gamle iPhone og giver den nyt liv hos en ny og glad bruger. Sælg din iPhone til Phonetrade og vær med til at passe på den verden vores børn skal leve i. I Danmark skrotter vi over 100.000 tons elektronik hvert år. Størstedelen af materialer og komponenter kan sagtens genanvendes og meget af det er direkte funktionelt stadigvæk. Så kør vores flow igennem og se hvad du kan sælge netop din iPhone for.
 
-                Hvis du er i tvivl om noget, så er du altid velkommen til at skrive en mail til os på info@phonetrade.dk eller ringe på 93 10 98 99.
+                Hvis du er i tvivl om noget, så er du altid velkommen til at skrive en mail til os på kontakt@phonetrade.dk eller ringe på 93 10 98 99.
             </div> */}
 
         <div className='section-bot-summary'>

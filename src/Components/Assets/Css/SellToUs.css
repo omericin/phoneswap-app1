@@ -10,13 +10,14 @@
     color: #383b3b;
     align-items: center;
     margin-top: 0px;
-    background-color: #9598a6;
+    background-color: #4f515d;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .top-section-wrapper {
     width: 1000px;
-    background-color: #9598a6;
+    background-color: #4f515d;
 }
 
 .top-section {

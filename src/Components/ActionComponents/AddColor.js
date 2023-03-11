@@ -15,8 +15,7 @@ export default function AddColor(props) {
     const [hexCode, setHexCode] = useState();
 
     function doSmth() {
-        axios.post("http://localhost:5000/color/add", {
-            id: hexCode,
+        axios.post(apiColor, {
             name: name,
             hexCode: hexCode,
         }).then((response) => {
